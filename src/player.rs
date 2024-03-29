@@ -9,7 +9,7 @@ impl Player {
         Self { position }
     }
 
-    pub fn render(&self, ctx: &mut BTerm, camera: &mut Camera) {
+    pub fn render(&self, ctx: &mut BTerm, camera: &Camera) {
         ctx.set_active_console(1);
         ctx.set(
             self.position.x - camera.left_x,
@@ -37,5 +37,4 @@ impl Player {
         }
     }
 }
-
 
